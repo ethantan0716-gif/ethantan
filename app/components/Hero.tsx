@@ -59,8 +59,8 @@ export default function Hero() {
             animate="show"
             className="text-lg md:text-xl text-[#747578] max-w-xl mb-8 leading-relaxed"
           >
-            I grew up working in my father&apos;s leather studio, surrounded by machines and the smell of craft.
-            That spark became an obsession — today I build things with CNC mills, 3D printers, and code.
+            Growing up around my father&apos;s leather studio got me really into making things from a young age.
+            These days I channel that into building with CNC mills, 3D printers, and code.
             Based in{" "}
             <span className="text-[#eeeef0] font-semibold">Singapore</span>,
             studying at{" "}
