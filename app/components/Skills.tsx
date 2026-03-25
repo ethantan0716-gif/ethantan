@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Box, Printer, Wrench, Code2 } from "lucide-react";
+import { Box, Printer, Wrench } from "lucide-react";
 
 const skills = [
   {
@@ -27,14 +27,6 @@ const skills = [
       "Subtractive manufacturing with Stepcraft systems. I work in Cut2D to create CAM toolpaths for timber, plastics, and composite materials.",
     tags: ["Stepcraft", "Cut2D", "Timber & Plastics"],
     color: "#0ea5e9",
-  },
-  {
-    icon: Code2,
-    name: "React / Next.js",
-    description:
-      "Full-stack web development with TypeScript, Prisma, PostgreSQL, Auth.js, and Pusher. I build and deploy real applications — not just landing pages.",
-    tags: ["TypeScript", "Next.js", "PostgreSQL", "Prisma"],
-    color: "#f97316",
   },
 ];
 
