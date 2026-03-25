@@ -10,7 +10,7 @@ const skills = [
     description:
       "3D modeling and product visualization. I use Blender to design parts before they're printed or milled — everything from fingerboard ramps to shop display stands.",
     tags: ["3D Modeling", "Rendering", "Product Viz"],
-    color: "#81ecff",
+    color: "#0ea5e9",
   },
   {
     icon: Printer,
@@ -18,7 +18,7 @@ const skills = [
     description:
       "Running Bambu Labs machines with exotic filaments for structural and aesthetic parts. I optimize prints for strength, speed, and material efficiency.",
     tags: ["Bambu Labs", "FDM", "Exotic Filaments"],
-    color: "#ff7520",
+    color: "#f97316",
   },
   {
     icon: Wrench,
@@ -26,7 +26,7 @@ const skills = [
     description:
       "Subtractive manufacturing with Stepcraft systems. I work in Cut2D to create CAM toolpaths for timber, plastics, and composite materials.",
     tags: ["Stepcraft", "Cut2D", "Timber & Plastics"],
-    color: "#81ecff",
+    color: "#0ea5e9",
   },
   {
     icon: Code2,
@@ -34,7 +34,7 @@ const skills = [
     description:
       "Full-stack web development with TypeScript, Prisma, PostgreSQL, Auth.js, and Pusher. I build and deploy real applications — not just landing pages.",
     tags: ["TypeScript", "Next.js", "PostgreSQL", "Prisma"],
-    color: "#ff7520",
+    color: "#f97316",
   },
 ];
 
@@ -63,21 +63,21 @@ export default function Skills() {
       >
         <div>
           <span
-            className="text-[#81ecff] text-xs font-bold tracking-[0.3em] uppercase mb-3 block"
+            className="text-[#0ea5e9] text-xs font-bold tracking-[0.3em] uppercase mb-3 block"
             style={{ fontFamily: "var(--font-space-grotesk)" }}
           >
             What I work with
           </span>
           <h2
-            className="text-4xl md:text-5xl font-black uppercase tracking-tighter"
+            className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-slate-900"
             style={{ fontFamily: "var(--font-space-grotesk)" }}
           >
             Tools of the Trade
           </h2>
         </div>
         <div className="hidden md:flex items-center gap-6">
-          <div className="h-px w-32 bg-[#46484a]/30" />
-          <span className="text-[#747578] text-xs uppercase tracking-widest whitespace-nowrap">
+          <div className="h-px w-32 bg-slate-200" />
+          <span className="text-slate-400 text-xs uppercase tracking-widest whitespace-nowrap">
             Digital × Physical
           </span>
         </div>
@@ -97,10 +97,9 @@ export default function Skills() {
             <motion.div
               key={skill.name}
               variants={cardVariants}
-              className="group bg-[#111416] p-7 rounded-2xl border border-[#46484a]/20 hover:border-[#81ecff]/30 transition-all duration-500 flex flex-col"
-              style={{ borderColor: undefined }}
+              className="group bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 flex flex-col"
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLDivElement).style.borderColor = `${skill.color}40`;
+                (e.currentTarget as HTMLDivElement).style.borderColor = `${skill.color}50`;
               }}
               onMouseLeave={(e) => {
                 (e.currentTarget as HTMLDivElement).style.borderColor = "";
@@ -108,19 +107,19 @@ export default function Skills() {
             >
               <div
                 className="w-12 h-12 rounded-xl flex items-center justify-center mb-6"
-                style={{ backgroundColor: `${skill.color}15` }}
+                style={{ backgroundColor: `${skill.color}12` }}
               >
                 <Icon size={22} style={{ color: skill.color }} />
               </div>
 
               <h3
-                className="text-xl font-black uppercase tracking-tight mb-3"
+                className="text-xl font-black uppercase tracking-tight mb-3 text-slate-900"
                 style={{ fontFamily: "var(--font-space-grotesk)" }}
               >
                 {skill.name}
               </h3>
 
-              <p className="text-[#747578] text-sm leading-relaxed mb-6 flex-grow">
+              <p className="text-slate-500 text-sm leading-relaxed mb-6 flex-grow">
                 {skill.description}
               </p>
 

@@ -41,19 +41,19 @@ export default function Services() {
             viewport={{ once: true, margin: "-80px" }}
           >
             <span
-              className="text-[#81ecff] text-xs font-bold tracking-[0.3em] uppercase mb-3 block"
+              className="text-[#0ea5e9] text-xs font-bold tracking-[0.3em] uppercase mb-3 block"
               style={{ fontFamily: "var(--font-space-grotesk)" }}
             >
               Let&apos;s work together
             </span>
             <h2
-              className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-6 leading-[0.95]"
+              className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-6 leading-[0.95] text-slate-900"
               style={{ fontFamily: "var(--font-space-grotesk)" }}
             >
               Let&apos;s Build{" "}
-              <span className="text-[#81ecff]">Something Together</span>
+              <span className="text-[#0ea5e9]">Something Together</span>
             </h2>
-            <p className="text-[#747578] text-lg mb-12 max-w-md leading-relaxed">
+            <p className="text-slate-500 text-lg mb-12 max-w-md leading-relaxed">
               Available for select freelance projects and commissions. From concept design to
               physical fabrication — I do both.
             </p>
@@ -72,17 +72,17 @@ export default function Services() {
                   viewport={{ once: true, margin: "-80px" }}
                   className="flex gap-5 items-start"
                 >
-                  <div className="bg-[#81ecff]/10 p-3 rounded-xl text-[#81ecff] shrink-0">
+                  <div className="bg-[#0ea5e9]/10 p-3 rounded-xl text-[#0ea5e9] shrink-0">
                     <Icon size={20} />
                   </div>
                   <div>
                     <h4
-                      className="font-black uppercase tracking-widest text-sm mb-1"
+                      className="font-black uppercase tracking-widest text-sm mb-1 text-slate-900"
                       style={{ fontFamily: "var(--font-space-grotesk)" }}
                     >
                       {s.title}
                     </h4>
-                    <p className="text-[#747578] text-sm leading-relaxed">{s.description}</p>
+                    <p className="text-slate-500 text-sm leading-relaxed">{s.description}</p>
                   </div>
                 </motion.div>
               );
@@ -99,13 +99,12 @@ export default function Services() {
           viewport={{ once: true, margin: "-80px" }}
           className="relative"
         >
-          <div className="absolute -top-5 right-6 bg-[#ff7520] px-5 py-1.5 rounded-lg text-[#3c1400] font-black uppercase text-xs tracking-widest shadow-xl z-10"
+          <div className="absolute -top-5 right-6 bg-[#f97316] px-5 py-1.5 rounded-lg text-white font-black uppercase text-xs tracking-widest shadow-lg z-10"
             style={{ fontFamily: "var(--font-space-grotesk)" }}>
             Open for Work
           </div>
 
-          <div className="bg-[#111416] p-8 md:p-10 rounded-2xl border border-[#46484a]/30 shadow-2xl">
-            {/* Replace YOUR_FORM_ID with your actual Formspree form ID */}
+          <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-200 shadow-lg">
             <form
               action="https://formspree.io/f/mreynvnn"
               method="POST"
@@ -115,7 +114,7 @@ export default function Services() {
                 <div className="space-y-1.5">
                   <label
                     htmlFor="name"
-                    className="text-[10px] text-[#747578] uppercase tracking-widest font-semibold"
+                    className="text-xs text-slate-500 font-semibold"
                     style={{ fontFamily: "var(--font-space-grotesk)" }}
                   >
                     Name
@@ -126,13 +125,13 @@ export default function Services() {
                     type="text"
                     required
                     placeholder="Your name"
-                    className="w-full bg-[#1d2022] border border-[#46484a]/30 rounded-lg px-4 py-3 text-[#eeeef0] placeholder:text-[#46484a] focus:outline-none focus:border-[#81ecff]/50 transition-colors text-sm"
+                    className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-[#0ea5e9]/60 focus:bg-white focus:ring-2 focus:ring-[#0ea5e9]/10 transition-all text-sm"
                   />
                 </div>
                 <div className="space-y-1.5">
                   <label
                     htmlFor="email"
-                    className="text-[10px] text-[#747578] uppercase tracking-widest font-semibold"
+                    className="text-xs text-slate-500 font-semibold"
                     style={{ fontFamily: "var(--font-space-grotesk)" }}
                   >
                     Email
@@ -143,7 +142,7 @@ export default function Services() {
                     type="email"
                     required
                     placeholder="your@email.com"
-                    className="w-full bg-[#1d2022] border border-[#46484a]/30 rounded-lg px-4 py-3 text-[#eeeef0] placeholder:text-[#46484a] focus:outline-none focus:border-[#81ecff]/50 transition-colors text-sm"
+                    className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-[#0ea5e9]/60 focus:bg-white focus:ring-2 focus:ring-[#0ea5e9]/10 transition-all text-sm"
                   />
                 </div>
               </div>
@@ -151,7 +150,7 @@ export default function Services() {
               <div className="space-y-1.5">
                 <label
                   htmlFor="message"
-                  className="text-[10px] text-[#747578] uppercase tracking-widest font-semibold"
+                  className="text-xs text-slate-500 font-semibold"
                   style={{ fontFamily: "var(--font-space-grotesk)" }}
                 >
                   Tell me about your project
@@ -162,21 +161,21 @@ export default function Services() {
                   rows={5}
                   required
                   placeholder="What do you want to build?"
-                  className="w-full bg-[#1d2022] border border-[#46484a]/30 rounded-lg px-4 py-3 text-[#eeeef0] placeholder:text-[#46484a] focus:outline-none focus:border-[#81ecff]/50 transition-colors text-sm resize-none"
+                  className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-[#0ea5e9]/60 focus:bg-white focus:ring-2 focus:ring-[#0ea5e9]/10 transition-all text-sm resize-none"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-[#81ecff] text-[#003840] py-4 rounded-lg font-black uppercase tracking-[0.15em] hover:brightness-110 active:scale-[0.98] transition-all text-sm"
+                className="w-full bg-[#0ea5e9] text-white py-4 rounded-lg font-black uppercase tracking-[0.15em] hover:bg-[#0284c7] hover:shadow-lg hover:shadow-sky-200 active:scale-[0.98] transition-all text-sm"
                 style={{ fontFamily: "var(--font-space-grotesk)" }}
               >
                 Send Message
               </button>
 
-              <p className="text-center text-[#46484a] text-xs">
+              <p className="text-center text-slate-400 text-xs">
                 Or email me directly at{" "}
-                <a href="mailto:hello@ethantan.dev" className="text-[#81ecff] hover:underline">
+                <a href="mailto:hello@ethantan.dev" className="text-[#0ea5e9] hover:underline">
                   hello@ethantan.dev
                 </a>
               </p>

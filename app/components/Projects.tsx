@@ -12,7 +12,7 @@ const projects = [
     description:
       "High-performance fingerboard accessories, ramps, and custom-tuned components. Shipping globally from Singapore — what started as a hobby became a real business.",
     icon: ShoppingBag,
-    color: "#ff7520",
+    color: "#f97316",
     link: "#",
     linkLabel: "Visit Shop",
     size: "large",
@@ -25,7 +25,7 @@ const projects = [
     description:
       "A real-time direct messaging app built with Next.js, TypeScript, PostgreSQL, Pusher, and Google OAuth. Deployed on Vercel.",
     icon: Globe,
-    color: "#81ecff",
+    color: "#0ea5e9",
     link: "https://dchat-nine.vercel.app",
     linkLabel: "Live Demo",
     github: "https://github.com/ethantan0716-gif/dchat",
@@ -39,7 +39,7 @@ const projects = [
     description:
       "When something breaks at home, I print a replacement. Water filter stand, aquarium filter adapter, remote control holder — practical solutions designed from scratch.",
     icon: Home,
-    color: "#81ecff",
+    color: "#0ea5e9",
     link: null,
     size: "small",
   },
@@ -51,7 +51,7 @@ const projects = [
     description:
       "Custom CNC-milled tool holders and product display stands for shop fronts. Designed in Blender, cut on Stepcraft, finished by hand.",
     icon: Wrench,
-    color: "#ff7520",
+    color: "#f97316",
     link: null,
     size: "small",
   },
@@ -63,7 +63,7 @@ const projects = [
     description:
       "3D-printed molds for casting fingerboard decks. Precision tolerances required — every millimetre matters.",
     icon: Layers,
-    color: "#81ecff",
+    color: "#0ea5e9",
     link: null,
     size: "small",
   },
@@ -75,7 +75,7 @@ const projects = [
     description:
       "Fingerboard ramps with integrated grinding rails. Concrete poured into 3D-printed formwork. About 14 hours from design to finished product.",
     icon: Waves,
-    color: "#ff7520",
+    color: "#f97316",
     link: null,
     size: "small",
   },
@@ -92,7 +92,7 @@ export default function Projects() {
   const smalls = projects.filter((p) => p.size === "small");
 
   return (
-    <section id="portfolio" className="py-24 bg-[#111416] px-6 md:px-8">
+    <section id="portfolio" className="py-24 bg-slate-50 px-6 md:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -103,17 +103,17 @@ export default function Projects() {
           className="mb-14 text-center"
         >
           <span
-            className="text-[#81ecff] text-xs font-bold tracking-[0.3em] uppercase mb-3 block"
+            className="text-[#0ea5e9] text-xs font-bold tracking-[0.3em] uppercase mb-3 block"
             style={{ fontFamily: "var(--font-space-grotesk)" }}
           >
             Real projects. Real results.
           </span>
           <h2
-            className="text-4xl md:text-5xl font-black uppercase tracking-tighter"
+            className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-slate-900"
             style={{ fontFamily: "var(--font-space-grotesk)" }}
           >
             Project{" "}
-            <span className="text-[#ff7520]">Vault</span>
+            <span className="text-[#f97316]">Vault</span>
           </h2>
         </motion.div>
 
@@ -125,31 +125,31 @@ export default function Projects() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, margin: "-60px" }}
-            className="md:col-span-7 group relative rounded-2xl overflow-hidden bg-[#0c0e10] border border-[#46484a]/20 hover:border-[#ff7520]/30 transition-all duration-500 min-h-[420px] flex flex-col justify-end p-10"
+            className="md:col-span-7 group relative rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 hover:border-orange-200 transition-all duration-300 min-h-[420px] flex flex-col justify-end p-10"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-[#ff7520]/5 to-transparent" />
-            <div className="absolute top-8 right-8 w-24 h-24 rounded-full bg-[#ff7520]/5 flex items-center justify-center">
-              <ShoppingBag size={40} className="text-[#ff7520]/40" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#f97316]/5 to-transparent" />
+            <div className="absolute top-8 right-8 w-24 h-24 rounded-full bg-[#f97316]/8 flex items-center justify-center">
+              <ShoppingBag size={40} className="text-[#f97316]/30" />
             </div>
             <div className="relative z-10">
               <div className="flex items-center gap-2 mb-4">
-                <span className="px-3 py-1 bg-[#ff7520] text-[#3c1400] text-[10px] font-black uppercase rounded-full" style={{ fontFamily: "var(--font-space-grotesk)" }}>
+                <span className="px-3 py-1 bg-[#f97316] text-white text-[10px] font-black uppercase rounded-full" style={{ fontFamily: "var(--font-space-grotesk)" }}>
                   {large.category}
                 </span>
-                <span className="px-3 py-1 bg-[#1d2022] text-[#eeeef0] text-[10px] font-semibold uppercase rounded-full border border-[#46484a]/30" style={{ fontFamily: "var(--font-space-grotesk)" }}>
+                <span className="px-3 py-1 bg-slate-100 text-slate-600 text-[10px] font-semibold uppercase rounded-full border border-slate-200" style={{ fontFamily: "var(--font-space-grotesk)" }}>
                   {large.tag}
                 </span>
               </div>
-              <h3 className="text-4xl font-black uppercase tracking-tighter mb-3" style={{ fontFamily: "var(--font-space-grotesk)" }}>
+              <h3 className="text-4xl font-black uppercase tracking-tighter mb-3 text-slate-900" style={{ fontFamily: "var(--font-space-grotesk)" }}>
                 {large.title}
               </h3>
-              <p className="text-[#747578] max-w-md mb-6 leading-relaxed">
+              <p className="text-slate-500 max-w-md mb-6 leading-relaxed">
                 {large.description}
               </p>
               {large.link && (
                 <a
                   href={large.link}
-                  className="inline-flex items-center gap-2 text-[#ff7520] font-bold uppercase tracking-widest text-sm hover:gap-3 transition-all"
+                  className="inline-flex items-center gap-2 text-[#f97316] font-bold uppercase tracking-widest text-sm hover:gap-3 transition-all"
                   style={{ fontFamily: "var(--font-space-grotesk)" }}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -167,31 +167,31 @@ export default function Projects() {
             whileInView="show"
             viewport={{ once: true, margin: "-60px" }}
             transition={{ delay: 0.1 }}
-            className="md:col-span-5 group relative rounded-2xl overflow-hidden bg-[#0c0e10] border border-[#46484a]/20 hover:border-[#81ecff]/30 transition-all duration-500 min-h-[420px] flex flex-col justify-end p-8"
+            className="md:col-span-5 group relative rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 hover:border-sky-200 transition-all duration-300 min-h-[420px] flex flex-col justify-end p-8"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-[#81ecff]/5 to-transparent" />
-            <div className="absolute top-6 right-6 w-20 h-20 rounded-full bg-[#81ecff]/5 flex items-center justify-center">
-              <Globe size={32} className="text-[#81ecff]/40" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#0ea5e9]/5 to-transparent" />
+            <div className="absolute top-6 right-6 w-20 h-20 rounded-full bg-[#0ea5e9]/8 flex items-center justify-center">
+              <Globe size={32} className="text-[#0ea5e9]/30" />
             </div>
             <div className="relative z-10">
               <div className="flex items-center gap-2 mb-3">
-                <span className="px-3 py-1 bg-[#81ecff]/10 text-[#81ecff] text-[10px] font-black uppercase rounded-full border border-[#81ecff]/20" style={{ fontFamily: "var(--font-space-grotesk)" }}>
+                <span className="px-3 py-1 bg-[#0ea5e9]/10 text-[#0ea5e9] text-[10px] font-black uppercase rounded-full border border-[#0ea5e9]/20" style={{ fontFamily: "var(--font-space-grotesk)" }}>
                   {medium.category}
                 </span>
-                <span className="px-3 py-1 bg-[#1d2022] text-[#eeeef0] text-[10px] font-semibold uppercase rounded-full border border-[#46484a]/30" style={{ fontFamily: "var(--font-space-grotesk)" }}>
+                <span className="px-3 py-1 bg-slate-100 text-slate-600 text-[10px] font-semibold uppercase rounded-full border border-slate-200" style={{ fontFamily: "var(--font-space-grotesk)" }}>
                   {medium.tag}
                 </span>
               </div>
-              <h3 className="text-3xl font-black uppercase tracking-tighter mb-2" style={{ fontFamily: "var(--font-space-grotesk)" }}>
+              <h3 className="text-3xl font-black uppercase tracking-tighter mb-2 text-slate-900" style={{ fontFamily: "var(--font-space-grotesk)" }}>
                 {medium.title}
               </h3>
-              <p className="text-[#747578] text-sm leading-relaxed mb-5">
+              <p className="text-slate-500 text-sm leading-relaxed mb-5">
                 {medium.description}
               </p>
               <div className="flex items-center gap-4">
                 <a
                   href={medium.link!}
-                  className="inline-flex items-center gap-1.5 text-[#81ecff] font-bold uppercase tracking-widest text-xs hover:gap-2.5 transition-all"
+                  className="inline-flex items-center gap-1.5 text-[#0ea5e9] font-bold uppercase tracking-widest text-xs hover:gap-2.5 transition-all"
                   style={{ fontFamily: "var(--font-space-grotesk)" }}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -201,7 +201,7 @@ export default function Projects() {
                 {medium.github && (
                   <a
                     href={medium.github}
-                    className="inline-flex items-center gap-1.5 text-[#747578] hover:text-[#eeeef0] font-bold uppercase tracking-widest text-xs transition-colors"
+                    className="inline-flex items-center gap-1.5 text-slate-400 hover:text-slate-700 font-bold uppercase tracking-widest text-xs transition-colors"
                     style={{ fontFamily: "var(--font-space-grotesk)" }}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -224,7 +224,7 @@ export default function Projects() {
                 whileInView="show"
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ delay: 0.05 * i }}
-                className="md:col-span-3 bg-[#0c0e10] p-6 rounded-2xl border border-[#46484a]/20 hover:border-[#46484a]/50 transition-all duration-300 flex flex-col"
+                className="md:col-span-3 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 flex flex-col"
               >
                 <div
                   className="w-10 h-10 rounded-xl flex items-center justify-center mb-4"
@@ -241,12 +241,12 @@ export default function Projects() {
                   </span>
                 </div>
                 <h3
-                  className="text-lg font-black uppercase tracking-tight mb-2"
+                  className="text-lg font-black uppercase tracking-tight mb-2 text-slate-900"
                   style={{ fontFamily: "var(--font-space-grotesk)" }}
                 >
                   {project.title}
                 </h3>
-                <p className="text-[#747578] text-xs leading-relaxed flex-grow">
+                <p className="text-slate-500 text-xs leading-relaxed flex-grow">
                   {project.description}
                 </p>
               </motion.div>

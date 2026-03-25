@@ -8,12 +8,12 @@ const socials = [
   },
   {
     label: "Instagram",
-    href: "https://instagram.com/YOUR_HANDLE", // replace with real handle
+    href: "https://instagram.com/YOUR_HANDLE",
     icon: Camera,
   },
   {
     label: "Etsy",
-    href: "https://etsy.com/shop/YOUR_SHOP", // replace with real Etsy URL
+    href: "https://etsy.com/shop/YOUR_SHOP",
     icon: ShoppingBag,
   },
 ];
@@ -27,18 +27,18 @@ const navLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0c0e10] border-t border-[#46484a]/20">
+    <footer className="bg-slate-100 border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-6 md:px-8 py-12">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
           {/* Brand */}
           <div>
             <span
-              className="font-black text-[#81ecff] text-xl uppercase tracking-tighter block mb-1"
+              className="font-black text-[#0ea5e9] text-xl uppercase tracking-tighter block mb-1"
               style={{ fontFamily: "var(--font-space-grotesk)" }}
             >
               Ethan Tan
             </span>
-            <p className="text-[#46484a] text-xs uppercase tracking-[0.2em]">
+            <p className="text-slate-400 text-xs uppercase tracking-[0.2em]">
               Maker. Builder. Creator.
             </p>
           </div>
@@ -49,7 +49,7 @@ export default function Footer() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-[#747578] hover:text-[#81ecff] text-sm uppercase tracking-widest transition-colors"
+                className="text-slate-500 hover:text-[#0ea5e9] text-sm transition-colors"
                 style={{ fontFamily: "var(--font-space-grotesk)" }}
               >
                 {link.label}
@@ -68,7 +68,7 @@ export default function Footer() {
                   aria-label={s.label}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#747578] hover:text-[#81ecff] transition-colors"
+                  className="text-slate-400 hover:text-[#0ea5e9] transition-colors"
                 >
                   <Icon size={18} />
                 </a>
@@ -77,11 +77,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-8 border-t border-[#46484a]/20 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-[#46484a] text-xs uppercase tracking-widest">
+        <div className="mt-10 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-slate-400 text-xs">
             © {new Date().getFullYear()} Ethan Tan. Built with Next.js.
           </p>
-          <p className="text-[#46484a] text-xs">Singapore 🇸🇬</p>
+          <p className="text-slate-400 text-xs">Singapore 🇸🇬</p>
         </div>
       </div>
     </footer>
