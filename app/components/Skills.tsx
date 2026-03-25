@@ -81,7 +81,7 @@ export default function Skills() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, margin: "-80px" }}
-        className="grid md:grid-cols-2 lg:grid-cols-4 gap-5"
+        className="grid md:grid-cols-3 gap-6"
       >
         {skills.map((skill) => {
           const Icon = skill.icon;
