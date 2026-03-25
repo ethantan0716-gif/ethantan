@@ -74,9 +74,8 @@ export default function Hero() {
             animate="show"
             className="text-base text-[#747578] max-w-xl mb-10 leading-relaxed"
           >
-            When I&apos;m not in the workshop or writing code, I&apos;m on the football pitch, at the piano
-            (Grade 6 — six years in and still love it), or messing around with fingerboards,
-            which eventually became a real business.
+            When I&apos;m not in the workshop or writing code, I&apos;m usually practicing piano or playing
+            football for fun, or messing around with fingerboards — which eventually turned into a real business.
           </motion.p>
 
           <motion.div
