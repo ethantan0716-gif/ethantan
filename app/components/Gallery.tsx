@@ -13,12 +13,13 @@ type GalleryItem = {
 };
 
 const galleryItems: GalleryItem[] = [
-  { src: "/gallery/01.jpg", alt: "3D printed fingerboard ramp", caption: "Fingerboard ramp — FDM printed in PETG", category: "3D Print" },
-  { src: "/gallery/02.jpg", alt: "CNC milled shop display stand", caption: "Shop display stand — CNC milled from birch ply", category: "CNC" },
-  { src: "/gallery/03.jpg", alt: "Blender product render", caption: "Product visualisation render in Blender", category: "Blender" },
-  { src: "/gallery/04.jpg", alt: "3D printed home fixture", caption: "Custom aquarium filter adapter — PETG", category: "3D Print" },
-  { src: "/gallery/05.jpg", alt: "CNC milled fingerboard mold", caption: "Fingerboard mold — CNC cut in HDPE", category: "CNC" },
-  { src: "/gallery/06.jpg", alt: "Blender scene render", caption: "Scene concept render — Cycles", category: "Blender" },
+  { src: "/gallery/01.jpg", alt: "3D printed parts sorting tray with brass hardware", caption: "Parts sorting tray — printed in PETG, organises rivets and screws for BrickyFB orders", category: "3D Print" },
+  { src: "/gallery/02.jpg", alt: "3D printed tool holder with rivet setter", caption: "Rivet setter holder — custom printed to keep tools upright and accessible on the bench", category: "3D Print" },
+  { src: "/gallery/03.jpg", alt: "Leather card wallet on 3D printed display stand", caption: "Card wallet display stand — designed to show products upright for photos and the shop", category: "3D Print" },
+  { src: "/gallery/04.jpg", alt: "3D printed fingerboard display stand", caption: "Fingerboard display stand — minimal T-shape, printed in matte black PLA", category: "3D Print" },
+  { src: "/gallery/05.jpg", alt: "3D printed QR card holder stand", caption: "QR card holder — black body with orange accent frame, holds BrickyFB shop cards", category: "3D Print" },
+  { src: "/gallery/06.jpg", alt: "QR card holder with card being inserted", caption: "Card holder in use — sliding in a BrickyFB QR code card at the shop counter", category: "3D Print" },
+  { src: "/gallery/07.jpg", alt: "Two QR card holders with base and grain cards", caption: "Product lineup — two holders showing 'base' and 'grain' variant cards side by side", category: "3D Print" },
 ];
 
 const categoryColors: Record<string, string> = {
