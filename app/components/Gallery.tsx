@@ -13,13 +13,13 @@ type GalleryItem = {
 };
 
 const galleryItems: GalleryItem[] = [
-  { src: "/gallery/01.jpg", alt: "3D printed parts sorting tray with brass hardware", caption: "Parts sorting tray — printed in PETG, organises rivets and screws for BrickyFB orders", category: "3D Print" },
-  { src: "/gallery/02.jpg", alt: "3D printed tool holder with rivet setter", caption: "Rivet setter holder — custom printed to keep tools upright and accessible on the bench", category: "3D Print" },
-  { src: "/gallery/03.jpg", alt: "Leather card wallet on 3D printed display stand", caption: "Card wallet display stand — designed to show products upright for photos and the shop", category: "3D Print" },
-  { src: "/gallery/04.jpg", alt: "3D printed fingerboard display stand", caption: "Fingerboard display stand — minimal T-shape, printed in matte black PLA", category: "3D Print" },
-  { src: "/gallery/05.jpg", alt: "3D printed QR card holder stand", caption: "QR card holder — black body with orange accent frame, holds BrickyFB shop cards", category: "3D Print" },
-  { src: "/gallery/06.jpg", alt: "QR card holder with card being inserted", caption: "Card holder in use — sliding in a BrickyFB QR code card at the shop counter", category: "3D Print" },
-  { src: "/gallery/07.jpg", alt: "Two QR card holders with base and grain cards", caption: "Product lineup — two holders showing 'base' and 'grain' variant cards side by side", category: "3D Print" },
+  { src: "/gallery/01.jpg", alt: "Hardware parts tray with brass rivets and screws", caption: "Parts sorting tray — printed in PETG, organises Tauruscamp hardware components", category: "3D Print" },
+  { src: "/gallery/02.jpg", alt: "3D printed tool holder with rivet setter", caption: "Tool holder — custom printed to keep assembly tools upright on the bench", category: "3D Print" },
+  { src: "/gallery/03.jpg", alt: "Tauruscamp leather wallet on display stand", caption: "Wallet display stand — holds Tauruscamp wallets upright for product photography", category: "3D Print" },
+  { src: "/gallery/04.jpg", alt: "3D printed wallet display stand", caption: "Wallet stand — minimal T-shape in matte black, designed for clean product shots", category: "3D Print" },
+  { src: "/gallery/05.jpg", alt: "3D printed QR code product display holder", caption: "QR display holder — black body with orange accent frame, shows Tauruscamp product QR codes", category: "3D Print" },
+  { src: "/gallery/06.jpg", alt: "QR display holder with product card being inserted", caption: "QR holder in use — inserting a Tauruscamp product QR code card at point of sale", category: "3D Print" },
+  { src: "/gallery/07.jpg", alt: "Two Tauruscamp QR display holders with product cards", caption: "Product lineup — QR holders displaying 'base' and 'grain' Tauruscamp wallet variants", category: "3D Print" },
 ];
 
 const categoryColors: Record<string, string> = {
