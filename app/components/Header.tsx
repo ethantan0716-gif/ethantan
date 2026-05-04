@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -28,19 +28,18 @@ export default function Header() {
       <header
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-white/90 backdrop-blur-xl border-b border-slate-200/80 shadow-sm"
+            ? "bg-[#fdf8f3]/90 backdrop-blur-xl border-b border-[#e8ddd5]"
             : "bg-transparent"
         }`}
       >
         <div className="flex justify-between items-center px-6 md:px-8 py-4 max-w-7xl mx-auto">
           {/* Logo */}
-          <a href="#about" className="flex items-center gap-2 group">
-            <Zap size={18} className="text-[#0ea5e9]" />
+          <a href="#about" className="flex items-center gap-2">
             <span
-              className="text-xl font-black tracking-tighter text-[#0f172a] uppercase"
-              style={{ fontFamily: "var(--font-space-grotesk)" }}
+              className="text-xl font-extrabold tracking-tight text-stone-900"
+              style={{ fontFamily: "var(--font-plus-jakarta)" }}
             >
-              Ethan<span className="text-[#0ea5e9]">.</span>
+              Ethan<span className="text-[#d97706]">.</span>
             </span>
           </a>
 
@@ -50,8 +49,8 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-slate-500 font-medium hover:text-[#0ea5e9] transition-colors duration-200 text-sm"
-                style={{ fontFamily: "var(--font-space-grotesk)" }}
+                className="text-stone-500 font-medium hover:text-[#d97706] transition-colors duration-200 text-sm"
+                style={{ fontFamily: "var(--font-plus-jakarta)" }}
               >
                 {link.label}
               </a>
@@ -62,13 +61,13 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <a
               href="#contact"
-              className="hidden md:inline-block bg-[#0ea5e9] text-white px-5 py-2 rounded-lg font-bold tracking-tight text-sm transition-all hover:bg-[#0284c7] hover:shadow-lg hover:shadow-sky-200 active:scale-95"
-              style={{ fontFamily: "var(--font-space-grotesk)" }}
+              className="hidden md:inline-block bg-[#d97706] text-white px-5 py-2 rounded-full font-semibold text-sm transition-all hover:bg-[#b45309] hover:shadow-lg hover:shadow-amber-200 active:scale-95"
+              style={{ fontFamily: "var(--font-plus-jakarta)" }}
             >
               Hire Me
             </a>
             <button
-              className="md:hidden text-slate-700 p-1"
+              className="md:hidden text-stone-700 p-1"
               onClick={() => setMenuOpen(true)}
               aria-label="Open menu"
             >
@@ -81,25 +80,25 @@ export default function Header() {
       {/* Mobile Drawer Overlay */}
       {menuOpen && (
         <div
-          className="fixed inset-0 z-50 bg-slate-900/30 backdrop-blur-sm md:hidden"
+          className="fixed inset-0 z-50 bg-stone-900/20 backdrop-blur-sm md:hidden"
           onClick={close}
         />
       )}
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed top-0 right-0 h-full w-72 z-50 bg-white border-l border-slate-200 flex flex-col p-8 transition-transform duration-300 md:hidden shadow-2xl ${
+        className={`fixed top-0 right-0 h-full w-72 z-50 bg-[#fdf8f3] border-l border-[#e8ddd5] flex flex-col p-8 transition-transform duration-300 md:hidden shadow-2xl ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex justify-between items-center mb-12">
           <span
-            className="text-lg font-black text-[#0f172a] uppercase tracking-tight"
-            style={{ fontFamily: "var(--font-space-grotesk)" }}
+            className="text-lg font-bold text-stone-900"
+            style={{ fontFamily: "var(--font-plus-jakarta)" }}
           >
             Menu
           </span>
-          <button onClick={close} aria-label="Close menu" className="text-slate-400 hover:text-slate-700">
+          <button onClick={close} aria-label="Close menu" className="text-stone-400 hover:text-stone-700">
             <X size={22} />
           </button>
         </div>
@@ -110,8 +109,8 @@ export default function Header() {
               key={link.href}
               href={link.href}
               onClick={close}
-              className="text-2xl font-black uppercase tracking-tighter text-slate-800 hover:text-[#0ea5e9] transition-colors"
-              style={{ fontFamily: "var(--font-space-grotesk)" }}
+              className="text-2xl font-bold text-stone-800 hover:text-[#d97706] transition-colors"
+              style={{ fontFamily: "var(--font-plus-jakarta)" }}
             >
               {link.label}
             </a>
@@ -121,8 +120,8 @@ export default function Header() {
         <a
           href="#contact"
           onClick={close}
-          className="mt-auto bg-[#0ea5e9] text-white px-5 py-3 rounded-lg font-bold tracking-tight text-center text-sm hover:bg-[#0284c7] transition-colors"
-          style={{ fontFamily: "var(--font-space-grotesk)" }}
+          className="mt-auto bg-[#d97706] text-white px-5 py-3 rounded-full font-semibold text-center text-sm hover:bg-[#b45309] transition-colors"
+          style={{ fontFamily: "var(--font-plus-jakarta)" }}
         >
           Hire Me
         </a>

@@ -10,7 +10,7 @@ const skills = [
     description:
       "3D modeling and product visualization. I use Blender to design parts before they're printed or milled — everything from fingerboard ramps to shop display stands.",
     tags: ["3D Modeling", "Rendering", "Product Viz"],
-    color: "#0ea5e9",
+    color: "#d97706",
   },
   {
     icon: Printer,
@@ -26,15 +26,13 @@ const skills = [
     description:
       "Subtractive manufacturing with Stepcraft systems. I work in Cut2D to create CAM toolpaths for timber, plastics, and composite materials.",
     tags: ["Stepcraft", "Cut2D", "Timber & Plastics"],
-    color: "#0ea5e9",
+    color: "#d97706",
   },
 ];
 
 const containerVariants = {
   hidden: {},
-  show: {
-    transition: { staggerChildren: 0.1 },
-  },
+  show: { transition: { staggerChildren: 0.1 } },
 };
 
 const cardVariants = {
@@ -51,28 +49,20 @@ export default function Skills() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
-        className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4"
+        className="text-center mb-14"
       >
-        <div>
-          <span
-            className="text-[#0ea5e9] text-xs font-bold tracking-[0.3em] uppercase mb-3 block"
-            style={{ fontFamily: "var(--font-space-grotesk)" }}
-          >
-            What I work with
-          </span>
-          <h2
-            className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-slate-900"
-            style={{ fontFamily: "var(--font-space-grotesk)" }}
-          >
-            Tools of the Trade
-          </h2>
-        </div>
-        <div className="hidden md:flex items-center gap-6">
-          <div className="h-px w-32 bg-slate-200" />
-          <span className="text-slate-400 text-xs uppercase tracking-widest whitespace-nowrap">
-            Digital × Physical
-          </span>
-        </div>
+        <span
+          className="inline-block text-[#d97706] text-xs font-semibold tracking-widest uppercase mb-4 px-3 py-1 rounded-full bg-amber-50 border border-amber-100"
+          style={{ fontFamily: "var(--font-plus-jakarta)" }}
+        >
+          What I work with
+        </span>
+        <h2
+          className="text-4xl md:text-5xl font-extrabold text-stone-900"
+          style={{ fontFamily: "var(--font-plus-jakarta)" }}
+        >
+          Tools of the Trade
+        </h2>
       </motion.div>
 
       {/* Cards */}
@@ -89,7 +79,7 @@ export default function Skills() {
             <motion.div
               key={skill.name}
               variants={cardVariants}
-              className="group bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 flex flex-col"
+              className="group bg-white p-7 rounded-3xl border border-[#e8ddd5] shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col"
               onMouseEnter={(e) => {
                 (e.currentTarget as HTMLDivElement).style.borderColor = `${skill.color}50`;
               }}
@@ -98,20 +88,20 @@ export default function Skills() {
               }}
             >
               <div
-                className="w-12 h-12 rounded-xl flex items-center justify-center mb-6"
-                style={{ backgroundColor: `${skill.color}12` }}
+                className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6"
+                style={{ backgroundColor: `${skill.color}15` }}
               >
                 <Icon size={22} style={{ color: skill.color }} />
               </div>
 
               <h3
-                className="text-xl font-black uppercase tracking-tight mb-3 text-slate-900"
-                style={{ fontFamily: "var(--font-space-grotesk)" }}
+                className="text-xl font-bold text-stone-900 mb-3"
+                style={{ fontFamily: "var(--font-plus-jakarta)" }}
               >
                 {skill.name}
               </h3>
 
-              <p className="text-slate-500 text-sm leading-relaxed mb-6 flex-grow">
+              <p className="text-stone-500 text-sm leading-relaxed mb-6 flex-grow">
                 {skill.description}
               </p>
 
@@ -119,12 +109,13 @@ export default function Skills() {
                 {skill.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-[10px] px-2.5 py-1 rounded-full font-semibold uppercase tracking-wide border"
+                    className="text-[11px] px-3 py-1 rounded-full font-medium"
                     style={{
                       color: skill.color,
-                      borderColor: `${skill.color}30`,
+                      borderColor: `${skill.color}25`,
                       backgroundColor: `${skill.color}10`,
-                      fontFamily: "var(--font-space-grotesk)",
+                      border: `1px solid ${skill.color}25`,
+                      fontFamily: "var(--font-plus-jakarta)",
                     }}
                   >
                     {tag}

@@ -41,19 +41,19 @@ export default function Services() {
             viewport={{ once: true, margin: "-80px" }}
           >
             <span
-              className="text-[#0ea5e9] text-xs font-bold tracking-[0.3em] uppercase mb-3 block"
-              style={{ fontFamily: "var(--font-space-grotesk)" }}
+              className="inline-block text-[#d97706] text-xs font-semibold tracking-widest uppercase mb-4 px-3 py-1 rounded-full bg-amber-50 border border-amber-100"
+              style={{ fontFamily: "var(--font-plus-jakarta)" }}
             >
               Let&apos;s work together
             </span>
             <h2
-              className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-6 leading-[0.95] text-slate-900"
-              style={{ fontFamily: "var(--font-space-grotesk)" }}
+              className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight text-stone-900"
+              style={{ fontFamily: "var(--font-plus-jakarta)" }}
             >
               Let&apos;s Build{" "}
-              <span className="text-[#0ea5e9]">Something Together</span>
+              <span className="text-[#d97706]">Something Together</span>
             </h2>
-            <p className="text-slate-500 text-lg mb-12 max-w-md leading-relaxed">
+            <p className="text-stone-500 text-lg mb-12 max-w-md leading-relaxed">
               Available for select freelance projects and commissions. From concept design to
               physical fabrication — I do both.
             </p>
@@ -72,17 +72,17 @@ export default function Services() {
                   viewport={{ once: true, margin: "-80px" }}
                   className="flex gap-5 items-start"
                 >
-                  <div className="bg-[#0ea5e9]/10 p-3 rounded-xl text-[#0ea5e9] shrink-0">
+                  <div className="bg-amber-50 p-3 rounded-2xl text-[#d97706] shrink-0 border border-amber-100">
                     <Icon size={20} />
                   </div>
                   <div>
                     <h4
-                      className="font-black uppercase tracking-widest text-sm mb-1 text-slate-900"
-                      style={{ fontFamily: "var(--font-space-grotesk)" }}
+                      className="font-semibold text-stone-900 mb-1"
+                      style={{ fontFamily: "var(--font-plus-jakarta)" }}
                     >
                       {s.title}
                     </h4>
-                    <p className="text-slate-500 text-sm leading-relaxed">{s.description}</p>
+                    <p className="text-stone-500 text-sm leading-relaxed">{s.description}</p>
                   </div>
                 </motion.div>
               );
@@ -99,12 +99,14 @@ export default function Services() {
           viewport={{ once: true, margin: "-80px" }}
           className="relative"
         >
-          <div className="absolute -top-5 right-6 bg-[#f97316] px-5 py-1.5 rounded-lg text-white font-black uppercase text-xs tracking-widest shadow-lg z-10"
-            style={{ fontFamily: "var(--font-space-grotesk)" }}>
+          <div
+            className="absolute -top-5 right-6 bg-[#f97316] px-5 py-1.5 rounded-full text-white font-semibold text-xs shadow-lg z-10"
+            style={{ fontFamily: "var(--font-plus-jakarta)" }}
+          >
             Open for Work
           </div>
 
-          <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-200 shadow-lg">
+          <div className="bg-white p-8 md:p-10 rounded-3xl border border-[#e8ddd5] shadow-lg">
             <form
               action="https://formspree.io/f/mreynvnn"
               method="POST"
@@ -114,8 +116,8 @@ export default function Services() {
                 <div className="space-y-1.5">
                   <label
                     htmlFor="name"
-                    className="text-xs text-slate-500 font-semibold"
-                    style={{ fontFamily: "var(--font-space-grotesk)" }}
+                    className="text-xs text-stone-500 font-medium"
+                    style={{ fontFamily: "var(--font-plus-jakarta)" }}
                   >
                     Name
                   </label>
@@ -125,14 +127,14 @@ export default function Services() {
                     type="text"
                     required
                     placeholder="Your name"
-                    className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-[#0ea5e9]/60 focus:bg-white focus:ring-2 focus:ring-[#0ea5e9]/10 transition-all text-sm"
+                    className="w-full bg-amber-50/50 border border-[#e8ddd5] rounded-xl px-4 py-3 text-stone-900 placeholder:text-stone-400 focus:outline-none focus:border-[#d97706]/60 focus:bg-white focus:ring-2 focus:ring-amber-100 transition-all text-sm"
                   />
                 </div>
                 <div className="space-y-1.5">
                   <label
                     htmlFor="email"
-                    className="text-xs text-slate-500 font-semibold"
-                    style={{ fontFamily: "var(--font-space-grotesk)" }}
+                    className="text-xs text-stone-500 font-medium"
+                    style={{ fontFamily: "var(--font-plus-jakarta)" }}
                   >
                     Email
                   </label>
@@ -142,7 +144,7 @@ export default function Services() {
                     type="email"
                     required
                     placeholder="your@email.com"
-                    className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-[#0ea5e9]/60 focus:bg-white focus:ring-2 focus:ring-[#0ea5e9]/10 transition-all text-sm"
+                    className="w-full bg-amber-50/50 border border-[#e8ddd5] rounded-xl px-4 py-3 text-stone-900 placeholder:text-stone-400 focus:outline-none focus:border-[#d97706]/60 focus:bg-white focus:ring-2 focus:ring-amber-100 transition-all text-sm"
                   />
                 </div>
               </div>
@@ -150,8 +152,8 @@ export default function Services() {
               <div className="space-y-1.5">
                 <label
                   htmlFor="message"
-                  className="text-xs text-slate-500 font-semibold"
-                  style={{ fontFamily: "var(--font-space-grotesk)" }}
+                  className="text-xs text-stone-500 font-medium"
+                  style={{ fontFamily: "var(--font-plus-jakarta)" }}
                 >
                   Tell me about your project
                 </label>
@@ -161,21 +163,21 @@ export default function Services() {
                   rows={5}
                   required
                   placeholder="What do you want to build?"
-                  className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-[#0ea5e9]/60 focus:bg-white focus:ring-2 focus:ring-[#0ea5e9]/10 transition-all text-sm resize-none"
+                  className="w-full bg-amber-50/50 border border-[#e8ddd5] rounded-xl px-4 py-3 text-stone-900 placeholder:text-stone-400 focus:outline-none focus:border-[#d97706]/60 focus:bg-white focus:ring-2 focus:ring-amber-100 transition-all text-sm resize-none"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-[#0ea5e9] text-white py-4 rounded-lg font-black uppercase tracking-[0.15em] hover:bg-[#0284c7] hover:shadow-lg hover:shadow-sky-200 active:scale-[0.98] transition-all text-sm"
-                style={{ fontFamily: "var(--font-space-grotesk)" }}
+                className="w-full bg-[#d97706] text-white py-4 rounded-xl font-semibold hover:bg-[#b45309] hover:shadow-lg hover:shadow-amber-200 active:scale-[0.98] transition-all text-sm"
+                style={{ fontFamily: "var(--font-plus-jakarta)" }}
               >
                 Send Message
               </button>
 
-              <p className="text-center text-slate-400 text-xs">
+              <p className="text-center text-stone-400 text-xs">
                 Or email me directly at{" "}
-                <a href="mailto:hello@ethantan.dev" className="text-[#0ea5e9] hover:underline">
+                <a href="mailto:hello@ethantan.dev" className="text-[#d97706] hover:underline">
                   hello@ethantan.dev
                 </a>
               </p>

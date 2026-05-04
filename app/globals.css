@@ -1,18 +1,17 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #0ea5e9;
+  --color-primary: #d97706;
   --color-secondary: #f97316;
-  --color-background: #f8fafc;
+  --color-background: #fdf8f3;
   --color-surface: #ffffff;
-  --color-surface-high: #f1f5f9;
-  --color-surface-highest: #e2e8f0;
-  --color-on-surface: #0f172a;
-  --color-on-surface-muted: #64748b;
-  --color-outline: #e2e8f0;
+  --color-surface-high: #fef3e8;
+  --color-on-surface: #1c1917;
+  --color-on-surface-muted: #78716c;
+  --color-outline: #e8ddd5;
 
-  --font-headline: var(--font-space-grotesk);
-  --font-body: var(--font-manrope);
+  --font-headline: var(--font-plus-jakarta);
+  --font-body: var(--font-dm-sans);
 }
 
 * {
@@ -24,18 +23,18 @@ html {
 }
 
 body {
-  background-color: #f8fafc;
-  color: #0f172a;
-  font-family: var(--font-manrope), sans-serif;
+  background-color: #fdf8f3;
+  color: #1c1917;
+  font-family: var(--font-dm-sans), sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
-  background-color: #0ea5e9;
+  background-color: #d97706;
   color: #ffffff;
 }
 
 .technical-grid {
-  background-image: radial-gradient(circle at 1px 1px, #0ea5e912 1px, transparent 0);
+  background-image: radial-gradient(circle at 1px 1px, #d9770610 1px, transparent 0);
   background-size: 40px 40px;
 }
