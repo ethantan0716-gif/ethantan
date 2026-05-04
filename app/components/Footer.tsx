@@ -1,9 +1,35 @@
-import { GitBranch, Camera, ShoppingBag } from "lucide-react";
+import { FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
+import { SiEtsy } from "react-icons/si";
 
 const socials = [
-  { label: "GitHub", href: "https://github.com/ethantan0716-gif", icon: GitBranch },
-  { label: "Instagram", href: "https://instagram.com/YOUR_HANDLE", icon: Camera },
-  { label: "Etsy", href: "https://brickyfb.etsy.com", icon: ShoppingBag },
+  {
+    label: "GitHub",
+    href: "https://github.com/ethantan0716-gif",
+    icon: FaGithub,
+    color: "#1c1917",
+    hover: "#d97706",
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/brickyfb",
+    icon: FaInstagram,
+    color: "#e1306c",
+    hover: "#c2185b",
+  },
+  {
+    label: "YouTube",
+    href: "https://www.youtube.com/@brickyfb",
+    icon: FaYoutube,
+    color: "#ff0000",
+    hover: "#cc0000",
+  },
+  {
+    label: "Etsy",
+    href: "https://brickyfb.etsy.com",
+    icon: SiEtsy,
+    color: "#f1641e",
+    hover: "#d4581a",
+  },
 ];
 
 const navLinks = [
@@ -45,7 +71,7 @@ export default function Footer() {
           </nav>
 
           {/* Socials */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             {socials.map((s) => {
               const Icon = s.icon;
               return (
@@ -55,9 +81,13 @@ export default function Footer() {
                   aria-label={s.label}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-stone-400 hover:text-[#d97706] transition-colors"
+                  className="w-9 h-9 rounded-full bg-white border border-[#e8ddd5] flex items-center justify-center shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group"
                 >
-                  <Icon size={18} />
+                  <Icon
+                    size={16}
+                    style={{ color: s.color }}
+                    className="group-hover:scale-110 transition-transform duration-200"
+                  />
                 </a>
               );
             })}
