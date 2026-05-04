@@ -13,7 +13,7 @@ const projects = [
       "High-performance fingerboard accessories, ramps, and custom-tuned components. Shipping globally from Singapore — what started as a hobby became a real business.",
     icon: ShoppingBag,
     color: "#f97316",
-    link: "#",
+    link: "https://brickyfb.etsy.com",
     linkLabel: "Visit Shop",
     size: "large",
   },
