@@ -55,13 +55,13 @@ export default function Skills() {
           className="inline-block text-[#d97706] text-xs font-semibold tracking-widest uppercase mb-4 px-3 py-1 rounded-full bg-amber-50 border border-amber-100"
           style={{ fontFamily: "var(--font-plus-jakarta)" }}
         >
-          What I work with
+          Skills I&apos;ve Built Up
         </span>
         <h2
           className="text-4xl md:text-5xl font-extrabold text-stone-900"
           style={{ fontFamily: "var(--font-plus-jakarta)" }}
         >
-          Tools of the Trade
+          Crafted Over Time
         </h2>
       </motion.div>
 
