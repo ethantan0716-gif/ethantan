@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { MapPin, GraduationCap } from "lucide-react";
+import Image from "next/image";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 32 },
@@ -105,23 +106,15 @@ export default function Hero() {
           className="lg:col-span-5 relative group"
         >
           <div className="absolute -inset-4 bg-[#d97706]/8 blur-3xl rounded-full group-hover:bg-[#d97706]/14 transition-all duration-700" />
-          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-amber-50 border border-[#e8ddd5]">
-            <div className="w-full h-full flex flex-col items-center justify-center gap-4">
-              <div className="w-24 h-24 rounded-full bg-[#d97706]/10 border-2 border-[#d97706]/20 flex items-center justify-center">
-                <span
-                  className="text-4xl font-extrabold text-[#d97706]"
-                  style={{ fontFamily: "var(--font-plus-jakarta)" }}
-                >
-                  ET
-                </span>
-              </div>
-              <p className="text-stone-400 text-xs text-center px-8 leading-relaxed">
-                Drop your photo in{" "}
-                <code className="text-[#d97706]">public/images/ethan.jpg</code>
-                <br />
-                and replace this block
-              </p>
-            </div>
+          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-[#e8ddd5]">
+            <Image
+              src="/images/ethan.jpg"
+              alt="Ethan Tan — maker and builder"
+              fill
+              className="object-cover object-top"
+              priority
+              sizes="(max-width: 1024px) 100vw, 42vw"
+            />
           </div>
 
           {/* Callout card */}
