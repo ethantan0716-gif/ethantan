@@ -60,9 +60,9 @@ export default function Hero() {
             animate="show"
             className="text-lg md:text-xl text-stone-500 max-w-xl mb-10 leading-relaxed"
           >
-            16-year-old maker from{" "}
+            Hi! I&apos;m a 16-year-old student from{" "}
             <span className="text-stone-900 font-semibold">Singapore</span>{" "}
-            who builds things with 3D printers, CNC mills, and code — and somehow turned a fingerboard hobby into an actual business.
+            with skills in coding, Blender, and CNC machines. I also run a YouTube and Instagram around fingerboarding — which eventually led me to opening an Etsy shop to give back to the fingerboarding community.
           </motion.p>
 
           <motion.div
