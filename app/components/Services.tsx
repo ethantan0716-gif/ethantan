@@ -176,10 +176,7 @@ export default function Services() {
               </button>
 
               <p className="text-center text-stone-400 text-xs">
-                Or email me directly at{" "}
-                <a href="mailto:ethantan0716@gmail.com" className="text-[#d97706] hover:underline">
-                  ethantan0716@gmail.com
-                </a>
+                Or email me directly at ethantan0716@gmail.com
               </p>
             </form>
           </div>
