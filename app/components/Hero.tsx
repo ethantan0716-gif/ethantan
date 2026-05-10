@@ -58,25 +58,11 @@ export default function Hero() {
             variants={fadeUp}
             initial="hidden"
             animate="show"
-            className="text-lg md:text-xl text-stone-500 max-w-xl mb-8 leading-relaxed"
+            className="text-lg md:text-xl text-stone-500 max-w-xl mb-10 leading-relaxed"
           >
-            Growing up around my father&apos;s leather studio got me really into making things from a young age.
-            These days I channel that into building with CNC mills, 3D printers, and code.
-            Based in{" "}
-            <span className="text-stone-900 font-semibold">Singapore</span>,
-            studying at{" "}
-            <span className="text-stone-900 font-semibold">Whitley Secondary School</span>.
-          </motion.p>
-
-          <motion.p
-            custom={3}
-            variants={fadeUp}
-            initial="hidden"
-            animate="show"
-            className="text-base text-stone-500 max-w-xl mb-10 leading-relaxed"
-          >
-            When I&apos;m not in the workshop or writing code, I&apos;m usually practicing piano or playing
-            football for fun, or messing around with fingerboards — which eventually turned into a real business.
+            16-year-old maker from{" "}
+            <span className="text-stone-900 font-semibold">Singapore</span>{" "}
+            who builds things with 3D printers, CNC mills, and code — and somehow turned a fingerboard hobby into an actual business.
           </motion.p>
 
           <motion.div
