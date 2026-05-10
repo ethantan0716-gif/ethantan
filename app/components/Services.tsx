@@ -177,8 +177,8 @@ export default function Services() {
 
               <p className="text-center text-stone-400 text-xs">
                 Or email me directly at{" "}
-                <a href="mailto:hello@ethantan.dev" className="text-[#d97706] hover:underline">
-                  hello@ethantan.dev
+                <a href="mailto:ethantan0716@gmail.com" className="text-[#d97706] hover:underline">
+                  ethantan0716@gmail.com
                 </a>
               </p>
             </form>
