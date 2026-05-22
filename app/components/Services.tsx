@@ -1,20 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Pencil, Package } from "lucide-react";
+import { Cpu, Code } from "lucide-react";
 
-const services = [
+const tracks = [
   {
-    icon: Pencil,
-    title: "Custom Product Design",
+    icon: Cpu,
+    title: "Engineering Track",
     description:
-      "Full 3D development cycle from concept sketches to production-ready files. Blender modeling, print/mill-ready exports, and design iteration.",
+      "Hands-on experience with 3D printing (Bambu Labs), CNC milling (Stepcraft), and Blender CAD. I design, fabricate, and iterate physical products end-to-end.",
   },
   {
-    icon: Package,
-    title: "Maker Jobs",
+    icon: Code,
+    title: "Computing Track",
     description:
-      "Small-batch production, prototyping, and assembly for local Singapore clients. If you need something built, I can build it.",
+      "Full-stack development with Next.js, TypeScript, PostgreSQL, and Pusher. Built and deployed real applications — not just coursework projects.",
   },
 ];
 
@@ -31,7 +31,7 @@ export default function Services() {
   return (
     <section id="contact" className="py-24 px-6 md:px-8 max-w-7xl mx-auto">
       <div className="grid lg:grid-cols-2 gap-16 items-start">
-        {/* Left — services */}
+        {/* Left */}
         <div>
           <motion.div
             custom={0}
@@ -44,27 +44,27 @@ export default function Services() {
               className="inline-block text-[#d97706] text-xs font-semibold tracking-widest uppercase mb-4 px-3 py-1 rounded-full bg-amber-50 border border-amber-100"
               style={{ fontFamily: "var(--font-plus-jakarta)" }}
             >
-              Let&apos;s work together
+              Get in Touch
             </span>
             <h2
               className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight text-stone-900"
               style={{ fontFamily: "var(--font-plus-jakarta)" }}
             >
-              Let&apos;s Build{" "}
-              <span className="text-[#d97706]">Something Together</span>
+              Interested in{" "}
+              <span className="text-[#d97706]">My Work?</span>
             </h2>
             <p className="text-stone-500 text-lg mb-12 max-w-md leading-relaxed">
-              Available for select freelance projects and commissions. From concept design to
-              physical fabrication — I do both.
+              Whether you&apos;re an admissions interviewer, a potential collaborator, or someone
+              who wants something built — feel free to reach out.
             </p>
           </motion.div>
 
           <div className="space-y-8">
-            {services.map((s, i) => {
-              const Icon = s.icon;
+            {tracks.map((t, i) => {
+              const Icon = t.icon;
               return (
                 <motion.div
-                  key={s.title}
+                  key={t.title}
                   custom={i + 1}
                   variants={fadeUp}
                   initial="hidden"
@@ -80,9 +80,9 @@ export default function Services() {
                       className="font-semibold text-stone-900 mb-1"
                       style={{ fontFamily: "var(--font-plus-jakarta)" }}
                     >
-                      {s.title}
+                      {t.title}
                     </h4>
-                    <p className="text-stone-500 text-sm leading-relaxed">{s.description}</p>
+                    <p className="text-stone-500 text-sm leading-relaxed">{t.description}</p>
                   </div>
                 </motion.div>
               );
@@ -100,10 +100,10 @@ export default function Services() {
           className="relative"
         >
           <div
-            className="absolute -top-5 right-6 bg-[#f97316] px-5 py-1.5 rounded-full text-white font-semibold text-xs shadow-lg z-10"
+            className="absolute -top-5 right-6 bg-[#d97706] px-5 py-1.5 rounded-full text-white font-semibold text-xs shadow-lg z-10"
             style={{ fontFamily: "var(--font-plus-jakarta)" }}
           >
-            Open for Work
+            EAE Portfolio 2025
           </div>
 
           <div className="bg-white p-8 md:p-10 rounded-3xl border border-[#e8ddd5] shadow-lg">
@@ -155,14 +155,14 @@ export default function Services() {
                   className="text-xs text-stone-500 font-medium"
                   style={{ fontFamily: "var(--font-plus-jakarta)" }}
                 >
-                  Tell me about your project
+                  Message
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   rows={5}
                   required
-                  placeholder="What do you want to build?"
+                  placeholder="What would you like to discuss?"
                   className="w-full bg-amber-50/50 border border-[#e8ddd5] rounded-xl px-4 py-3 text-stone-900 placeholder:text-stone-400 focus:outline-none focus:border-[#d97706]/60 focus:bg-white focus:ring-2 focus:ring-amber-100 transition-all text-sm resize-none"
                 />
               </div>

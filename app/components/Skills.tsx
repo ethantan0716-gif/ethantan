@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Box, Printer, Wrench } from "lucide-react";
+import { Box, Printer, Wrench, Code } from "lucide-react";
 
 const skills = [
   {
@@ -27,6 +27,14 @@ const skills = [
       "Subtractive manufacturing with Stepcraft systems. I work in Cut2D to create CAM toolpaths for timber, plastics, and composite materials.",
     tags: ["Stepcraft", "Cut2D", "Timber & Plastics"],
     color: "#d97706",
+  },
+  {
+    icon: Code,
+    name: "Web Development",
+    description:
+      "Building full-stack web applications with Next.js, TypeScript, and PostgreSQL. I'm comfortable across the entire stack — from UI design to database and deployment.",
+    tags: ["Next.js", "TypeScript", "PostgreSQL"],
+    color: "#f97316",
   },
 ];
 
@@ -71,7 +79,7 @@ export default function Skills() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, margin: "-80px" }}
-        className="grid md:grid-cols-3 gap-6"
+        className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
       >
         {skills.map((skill) => {
           const Icon = skill.icon;
