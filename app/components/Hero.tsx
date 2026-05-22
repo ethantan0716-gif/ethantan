@@ -43,16 +43,19 @@ export default function Hero() {
 
           {/* Heading */}
           <motion.h1 custom={1} variants={fadeUp} initial="hidden" animate="show"
-            className="text-6xl md:text-7xl font-extrabold leading-[0.95] mb-8 text-stone-900"
+            className="text-6xl md:text-7xl font-extrabold leading-tight mb-2 text-stone-900"
             style={{ fontFamily: "var(--font-plus-jakarta)" }}
           >
-            Maker.<br />
-            <span className="text-[#d97706]">Builder.</span><br />
-            Creator.
+            Ethan <span className="text-[#d97706]">Tan</span>
           </motion.h1>
+          <motion.p custom={2} variants={fadeUp} initial="hidden" animate="show"
+            className="text-stone-500 text-lg mb-8"
+          >
+            Student · Maker · Developer · Singapore
+          </motion.p>
 
           {/* Skill cards — 2×2 grid */}
-          <motion.div custom={2} variants={fadeUp} initial="hidden" animate="show"
+          <motion.div custom={3} variants={fadeUp} initial="hidden" animate="show"
             className="grid grid-cols-2 gap-3"
           >
             {skills.map((skill) => {
