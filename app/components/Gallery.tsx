@@ -13,6 +13,7 @@ type GalleryItem = {
 };
 
 const galleryItems: GalleryItem[] = [
+  { src: "/gallery/08.jpg", alt: "DChat app screenshot", caption: "DChat — real-time messaging app built with Next.js, TypeScript, PostgreSQL and Pusher", category: "Web Dev" },
   { src: "/gallery/01.jpg", alt: "Hardware parts tray with brass rivets and screws", caption: "Parts sorting tray — printed in PETG, organises Tauruscamp hardware components", category: "3D Print" },
   { src: "/gallery/02.jpg", alt: "3D printed tool holder with rivet setter", caption: "Tool holder — custom printed to keep assembly tools upright on the bench", category: "3D Print" },
   { src: "/gallery/03.jpg", alt: "Tauruscamp leather wallet on display stand", caption: "Wallet display stand — holds Tauruscamp wallets upright for product photography", category: "3D Print" },
