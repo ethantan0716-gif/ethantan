@@ -21,7 +21,6 @@ const projects = [
     id: "dchat",
     title: "DChat",
     category: "Web App",
-    tag: "Full-Stack",
     description:
       "A real-time direct messaging app built with Next.js, TypeScript, PostgreSQL, Pusher, and Google OAuth. Deployed on Vercel.",
     icon: Globe,
@@ -97,12 +96,14 @@ export default function Projects() {
                     >
                       {project.category}
                     </span>
-                    <span
-                      className="px-3 py-1 bg-stone-100 text-stone-600 text-xs font-medium rounded-full border border-[#e8ddd5]"
-                      style={{ fontFamily: "var(--font-plus-jakarta)" }}
-                    >
-                      {project.tag}
-                    </span>
+                    {project.tag && (
+                      <span
+                        className="px-3 py-1 bg-stone-100 text-stone-600 text-xs font-medium rounded-full border border-[#e8ddd5]"
+                        style={{ fontFamily: "var(--font-plus-jakarta)" }}
+                      >
+                        {project.tag}
+                      </span>
+                    )}
                   </div>
 
                   {/* Title */}
